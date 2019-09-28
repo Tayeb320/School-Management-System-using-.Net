@@ -1,0 +1,48 @@
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.deps.json
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.json
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.dev.json
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csprojResolveAssemblyReference.cache
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csproj.CoreCompileInputs.cache
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfoInputs.cache
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfo.cs
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\iftak\Documents\Final\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.deps.json
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.json
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.dev.json
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csprojResolveAssemblyReference.cache
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csproj.CoreCompileInputs.cache
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfoInputs.cache
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfo.cs
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\iftak\Downloads\Final\Group H\SchoolWeb\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\USER\Desktop\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.deps.json
+C:\Users\USER\Desktop\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.json
+C:\Users\USER\Desktop\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.dev.json
+C:\Users\USER\Desktop\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\USER\Desktop\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfo.cs
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\USER\Desktop\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.deps.json
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.json
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.runtimeconfig.dev.json
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\bin\Debug\netcoreapp2.0\SchoolWeb.pdb
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csprojResolveAssemblyReference.cache
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.csproj.CoreCompileInputs.cache
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfoInputs.cache
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.AssemblyInfo.cs
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.dll
+C:\Users\iftak\Pictures\Projects\New folder\SchoolWeb\obj\Debug\netcoreapp2.0\SchoolWeb.pdb

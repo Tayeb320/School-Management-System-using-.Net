@@ -1,0 +1,28 @@
+﻿@model SchoolWeb.Models.ExamTypes
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="container">
+
+    <<hr />
+    <h3 class="header-line dltcol">Are you sure you want to delete this Exam Type?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Exam Type
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ExamType_Name)
+            </dd>
+        </dl>
+        <form asp-action="DeleteExam">
+            <input type="hidden" asp-for="ExamType_Id" />
+            <input type="submit" value="Delete" class="deleteBtn" />
+        </form>
+        <a asp-action="ExamIndex">
+            <input type="submit" value="Back to List" class="MyBtn" />
+        </a>
+    </div>
+</div>

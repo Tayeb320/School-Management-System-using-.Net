@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SchoolWeb.Models.Subjects>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <center>
+        <h1 class="header-line">Subjects</h1>
+    </center>
+    <a asp-action="CreateSubject">
+        <input type="submit" value="Add a New Subject" class="MyBtn1" />
+    </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Subject Name
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Subject_Name)
+                    </td>
+                    <td>
+                        <a asp-action="EditSubject" asp-route-id="@item.Subject_Id">
+                            <input class="MyBtn" type="submit" value="Edit">
+                        </a>
+                        <a asp-action="SubjectDetails" asp-route-id="@item.Subject_Id"><input class="detailsBtn" type="submit" value="Details"></a>
+                        <a asp-action="DeleteSubject" asp-route-id="@item.Subject_Id"><input class="deleteBtn" type="submit" value="Delete"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,142 @@
+﻿@model SchoolWeb.Models.Admission
+<div class="container">
+
+    <div class="well">
+        <a asp-action="Index">
+            <input class="MyBtn" type="submit" value="Back to List">
+        </a>
+        <center >
+
+            <img class="logo" src="~/img/logo.jpg" />
+            <h2>কয়ের উচ্চ বিদ্য়ালয় </h2>
+
+            <h5>  ডাকঘরঃ পূবাইল-১৭২১,উপজেলাঃ গাজীপুর সদর, জেলাঃ গাজীপুর</h5>
+            <h3>ভর্তি ফর্ম</h3>
+        </center>
+    </div>
+    <form asp-action="Create">
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">
+                <span>Error</span> <p>@ViewBag.Message</p>
+            </div>
+
+        }
+        <div class="col-lg-12 well">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>শিক্ষার্থীর নাম( বাংলায় )</label>
+                            <input type="text" name="StudentNameBan" placeholder="লিখুন....." class="form-control">
+                        </div>
+                        <div class="col-sm-4 form-group">
+
+                            <label for="image">শিক্ষার্থীর ছবি যুক্ত করুন</label>
+                            <input type="file" name="studentPic" accept="image/*">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>ইংরেজীতে ( বড় হাতের  )</label>
+                            <input type="text" name="StudentNameEng" placeholder="লিখুন....." class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>যে শ্রেণিতে ভর্তি হতে ইচ্ছুক :</label>
+                            <select asp-for="Class" class="form-control">
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label>পিতার নাম</label>
+                        <input type="text" name="FatherName" placeholder="লিখুন....." class="form-control">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label>মাতার নাম</label>
+                        <input type="text" name="motherName" placeholder="লিখুন....." class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label>অভিভাবকের  নাম</label>
+                    <input type="text" name="Guardian" placeholder="লিখুন....." class="form-control">
+                </div>
+            </div>
+
+            <div class="col-sm-4 form-group">
+                স্থায়ী ঠিকানাঃ
+                <label>গ্রামঃ </label>
+                <input type="text" name="PerVill" placeholder="লিখুন....." class="form-control">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label>পোঃ</label>
+                <input type="text" name="PerPost" placeholder="লিখুন....." class="form-control">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label>উপজেলা/জেলাঃ </label>
+                <input type="text" name="PerZila" placeholder="লিখুন....." class="form-control">
+            </div>
+
+
+            <div class="col-sm-4 form-group">
+                বর্তমান ঠিকানাঃ
+                <label>গ্রামঃ</label>
+                <input type="text" name="PreVill" placeholder="লিখুন....." class="form-control">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label>পোঃ</label>
+                <input type="text" name="PrePost" placeholder="লিখুন....." class="form-control">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label>উপজেলা/জেলাঃ</label>
+                <input type="text" name="PreZila" placeholder="লিখুন....." class="form-control">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6 form-group">
+                <label>জন্ম তারিখঃ</label>
+                <input type="date" name="Birthdate" placeholder="" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 form-group">
+                <label>ধর্ম :</label>
+                <input type="text" name="Religion" placeholder="লিখুন....." class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>সর্বশেষ যে  বিদ্যালয়ে অধ্যয়ন করেসে তার নাম ও ঠিকানাঃ </label>
+            <input type="text" name="LastSchool" placeholder="লিখুন....." class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>অভিভাবকের পেশা ও বার্ষিক আয়:</label>
+            <input type="text" name="GuardianDetails" placeholder="লিখুন....." class="form-control">
+        </div>
+        <div class=" row">
+            <div class="col-sm-6 form-group">
+                <label>মোবাইল নম্বর:</label>
+                <input type="text" name="Contact" placeholder="লিখুন....." class="form-control">
+            </div>
+        </div>
+
+        <input class="btn btn-lg btn-info" type="submit" value="Submit">
+    </form>
+</div>
+
+

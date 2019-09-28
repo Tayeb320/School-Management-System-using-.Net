@@ -1,0 +1,60 @@
+﻿@model SchoolWeb.Models.Results
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Results</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Student_Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mark)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Class.Class_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExamType.ExamType_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Section)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.Section_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Subject.Subject_Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Result_Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

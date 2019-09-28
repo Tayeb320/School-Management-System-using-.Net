@@ -1,0 +1,36 @@
+﻿@model SchoolWeb.Models.Subjects
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container">
+
+    <hr />
+    <h2 class="crt">Create a new Subject </h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreateSubject">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Subject Name</label>
+                    <input asp-for="Subject_Name" class="form-control" />
+                    <span asp-validation-for="Subject_Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="MyBtn1" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="SubjectIndex">
+            <input type="submit" value="Back to List" class="MyBtn" />
+        </a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</div>

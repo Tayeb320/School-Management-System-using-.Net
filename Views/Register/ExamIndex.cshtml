@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SchoolWeb.Models.ExamTypes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <center>
+        <h1 class="header-line">Exam Types</h1>
+    </center>
+    <a asp-action="CreateExam">
+        <input type="submit" value="Add a new Exam Type" class="MyBtn1" />
+    </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Exam Type
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExamType_Name)
+                    </td>
+                    <td>
+                        <a asp-action="ExamEdit" asp-route-id="@item.ExamType_Id">
+                            <input class="MyBtn" type="submit" value="Edit">
+                        </a>
+                        <a asp-action="ExamDetails" asp-route-id="@item.ExamType_Id"><input class="detailsBtn" type="submit" value="Details"></a>
+                        <a asp-action="DeleteExam" asp-route-id="@item.ExamType_Id"><input class="deleteBtn" type="submit" value="Delete"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

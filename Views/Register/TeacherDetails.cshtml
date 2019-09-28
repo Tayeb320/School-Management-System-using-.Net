@@ -1,0 +1,43 @@
+﻿@model SchoolWeb.Models.Teacher
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container">
+    <hr />
+    <center>
+        <h1 class="header-line crt">Teacher Details</h1>
+    </center>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Teacher_Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Teacher_Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Designation)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Designation)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Contact)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Contact)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="TeacherEdit" asp-route-id="@Model.Teacher_Id">
+            <input type="submit" value="Edit" class="MyBtn1" />
+        </a>
+        <a asp-action="TeacherIndex">
+            <input type="submit" value="Back to List" class="MyBtn" />
+        </a>
+    </div>
+</div>

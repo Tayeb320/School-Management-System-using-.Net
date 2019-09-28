@@ -1,0 +1,30 @@
+﻿@model SchoolWeb.Models.ExamTypes
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="container">
+    <hr />
+    <center>
+        <h1 class="header-line crt">Exam Type Details</h1>
+    </center>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Exam Type
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ExamType_Name)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="ExamEdit" asp-route-id="@Model.ExamType_Id">
+            <input type="submit" value="Edit" class="MyBtn1" />
+        </a>
+        <a asp-action="ExamIndex">
+            <input type="submit" value="Back to List" class="MyBtn" />
+        </a>
+    </div>
+</div>

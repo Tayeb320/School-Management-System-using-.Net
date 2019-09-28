@@ -1,0 +1,126 @@
+﻿@model SchoolWeb.Models.Admission
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="container">
+
+    <hr />
+    <h3 class="header-line dltcol">Are you sure you want to delete this  Student Record?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Student Name Bangla
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StudentNameBan)
+            </dd>
+
+            <dt>
+                Student Name English
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StudentNameEng)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Class)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Class)
+            </dd>
+            <dt>
+                Father Name
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FatherName)
+            </dd>
+            <dt>
+                Mother Name
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MotherName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Guardian)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Guardian)
+            </dd>
+            <dt>
+               Permanent Village
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PerVill)
+            </dd>
+            <dt>
+                Post Office
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PerPost)
+            </dd>
+            <dt>
+                Zilla
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PerZila)
+            </dd>
+            <dt>
+                Present Village
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PreVill)
+            </dd>
+            <dt>
+                Post Office
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PrePost)
+            </dd>
+            <dt>
+                Zilla
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PreZila)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Birthdate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Birthdate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Religion)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Religion)
+            </dd>
+            <dt>
+                Last School
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.LastSchool)
+            </dd>
+            <dt>
+                Guardian Details
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.GuardianDetails)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Contact)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Contact)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="StudentId" />
+            <input type="submit" value="Delete" class="deleteBtn" />
+        </form>
+        <a asp-action="Index">
+            <input type="submit" value="Back to List" class="MyBtn" />
+        </a>
+    </div>
+ </div>

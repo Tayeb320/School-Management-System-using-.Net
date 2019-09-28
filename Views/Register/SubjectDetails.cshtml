@@ -1,0 +1,30 @@
+﻿@model SchoolWeb.Models.Subjects
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="container">
+    <hr />
+    <center>
+        <h1 class="header-line crt">Subject Details</h1>
+    </center>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Subject Name
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Subject_Name)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="EditSubject" asp-route-id="@Model.Subject_Id">
+            <input type="submit" value="Edit" class="MyBtn1" />
+        </a>
+        <a asp-action="SubjectIndex">
+            <input type="submit" value="Back to List" class="MyBtn" />
+        </a>
+    </div>
+</div>

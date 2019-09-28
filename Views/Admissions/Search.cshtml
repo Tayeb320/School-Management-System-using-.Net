@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Search Result";
+}
+<hr />
+<div class="container ">
+    <h2 class="crt">Search Student</h2>
+    @using (@Html.BeginForm("SearchStudent", "Admissions", FormMethod.Get))
+    {
+        <b>Search By:</b>
+        @Html.RadioButton("searchBy", "Name", true) <text>Name</text>
+        @Html.RadioButton("searchBy", "Id") <text>Id</text>
+        @Html.RadioButton("searchBy", "Class") <text>Class</text><br />
+        @Html.TextBox("search")<br /><br /> <input type="submit" class="MyBtn" value="search" /><br /><hr /><hr /><hr /><br /><hr /><hr /><hr /><hr />
+    }
+    <hr />
+</div>

@@ -1,0 +1,34 @@
+﻿@model SchoolWeb.Models.Sections
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container">
+
+    <hr />
+    <h2 class="crt">Create a new Section </h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreateSection" target="_blank">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Section Name</label>
+                    <input asp-for="Section_Name" class="form-control" />
+                    <span asp-validation-for="Section_Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="MyBtn1" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <a asp-action="Index">
+        <input type="submit" value="Back to List" class="MyBtn" />
+    </a>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</div>

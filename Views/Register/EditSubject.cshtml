@@ -1,0 +1,36 @@
+﻿@model SchoolWeb.Models.Subjects
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="container">
+
+    <hr />
+    <h2 class="header-line crt"> Edit the Subject</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="EditSubject">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Subject_Id" />
+                <div class="form-group">
+                    <label class="control-label">Subject Name</label>
+                    <input asp-for="Subject_Name" class="form-control" />
+                    <span asp-validation-for="Subject_Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="MyBtn1" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="SubjectIndex"> <input class="MyBtn" type="submit" value="Back to List"></a>
+
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</div>

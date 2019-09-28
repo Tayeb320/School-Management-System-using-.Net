@@ -1,0 +1,17 @@
+﻿<div class="wrapper">
+    <form class="form-signin" asp-controller="Login" asp-action="Login" method="post">
+        @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-info">
+             <p>@ViewBag.Message</p>
+        </div>
+
+}
+        <h2 class="form-signin-heading">Please login</h2>
+        <input type="text" class="form-control" name="Email" placeholder="Email Address" required="" autofocus="" />
+        <p></p>
+        <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
+        
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+    </form>
+</div>

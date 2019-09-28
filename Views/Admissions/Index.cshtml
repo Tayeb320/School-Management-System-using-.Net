@@ -1,0 +1,157 @@
+﻿@model IEnumerable<SchoolWeb.Models.Admission>
+
+@{
+    ViewData["Title"] = "Student List";
+}
+<div class="container">
+    <center>
+        <h1 class="header-line">Student List</h1>
+    </center>
+    <h2 class="crt">Search</h2>
+    @using (@Html.BeginForm("SearchStudent", "Admissions", FormMethod.Get))
+    {
+        <b>Search By:</b>
+        @Html.RadioButton("searchBy", "Name", true) <text>Name</text>
+        @Html.RadioButton("searchBy", "Id") <text>Id</text>
+        @Html.RadioButton("searchBy", "Class") <text>Class</text><br />
+        @Html.TextBox("search")<br /><br /> <input type="submit" class="MyBtn" value="search" /><br />
+    }
+    <h4>
+        <a asp-action="Create">
+            <input class="MyBtn1" value="Add new Student" type="submit">
+        </a>
+    </h4>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Student Id
+                </th>
+                <th>
+                    Class
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.StudentNameBan)
+                    </th>*@
+                <th>
+                    Student Name
+                </th>
+                <th>
+                    Father Name
+                </th>
+                <th>
+                    Mother Name
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Guardian)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.PerVill)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PerPost)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PerZila)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PreVill)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PrePost)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PreZila)
+                    </th>*@
+                <th>
+                    Birth Date
+                </th>
+                <th>
+                    Religion
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.LastSchool)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.GuardianDetails)
+                    </th>*@
+                <th>
+                    Contact
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StudentId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Class)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.StudentNameBan)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StudentNameEng)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FatherName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MotherName)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Guardian)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PerVill)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PerPost)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PerZila)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PreVill)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PrePost)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PreZila)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Birthdate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Religion)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.LastSchool)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GuardianDetails)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contact)
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.StudentId">
+                            <input class="MyBtn" type="submit" value="Edit">
+                        </a>
+                        <a asp-action="Details" asp-route-id="@item.StudentId"><input class="detailsBtn" type="submit" value="Details"></a>
+                        <a asp-action="Delete" asp-route-id="@item.StudentId"><input class="deleteBtn" type="submit" value="Delete"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
